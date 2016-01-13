@@ -11,15 +11,6 @@ body {
     font-family: 'lato', sans-serif;
 }
 
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        width:90%;
-        left:5%;
-    }
-}
 
 .conversation {
     background-color: #2C323C;
@@ -53,4 +44,15 @@ body {
 h1, h3 {
     color: white;
     font-weight: 400;
+}
+
+@media screen and (max-device-width: 736px) {
+    body {
+        width:90%;
+        left:5%;
+    }
+
+    .chat h2, .chat p {
+        font-size: 1.5em;
+    }
 }
